@@ -27,7 +27,6 @@ export default {
     ],
     scoresItems: [
       "< 10",
-      "< 20",
       "> 20",
     ],
   }),
