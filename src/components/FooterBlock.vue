@@ -20,3 +20,12 @@ export default {
   data: () => ({}),
 }
 </script>
+
+<style lang="scss" scoped>
+  .red {
+    background-color: #EF5350 !important;
+    border-color: #EF5350 !important;
+    color: aliceblue;
+  }
+
+</style>
