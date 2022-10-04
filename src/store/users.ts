@@ -10,7 +10,6 @@ interface User {
   inset?: boolean;
 }
 
-// {users: [State[] | Divider[]]}
 interface filters {
   country: string | null;
   scores: string | null;
