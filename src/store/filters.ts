@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const useFilters = defineStore('filters', {
+export const useFiltersStore = defineStore('filters', {
   state(){
     return {
         country: null as null | string,

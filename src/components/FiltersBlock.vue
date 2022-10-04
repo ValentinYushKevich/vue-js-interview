@@ -6,12 +6,12 @@
   </v-col>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, defineProps, watch } from 'vue'
-import { useFilters } from '@/store/filters'
+import { useFiltersStore } from '@/store/filters'
 
 const countryVariant = ref('')
-const scoreVariant = ref(0)
+const scoreVariant = ref('')
 
 const props = defineProps({
   countryItems: {
@@ -24,7 +24,7 @@ const props = defineProps({
   }
 })
 
-const filtersStore = useFilters()
+const filtersStore = useFiltersStore()
 const { changeCountry, changeScores } = filtersStore
 
 watch(countryVariant,
