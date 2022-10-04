@@ -5,7 +5,7 @@
         <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="200" />
       </v-col>
 
-      <FiltersBlock :items="items" />
+      <FiltersBlock :countryItems="countryItems" :scoresItems="scoresItems"/>
       <UsersList :users="users" />
 
     </v-row>
@@ -18,11 +18,17 @@ import UsersList from './UsersList.vue';
 export default {
   name: "ContentBlock",
   data: () => ({
-    items: [
-      "russia",
-      "usa",
-      "> 20",
+    countryItems: [
+      "Russia",
+      "Usa",
+      "Belarusian",
+      "Canada",
+      "Albania",
+    ],
+    scoresItems: [
       "< 10",
+      "< 20",
+      "> 20",
     ],
     users: [
       { type: 'subheader', title: 'List' },
