@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <ContentBlock/>
+      <ContentBlock />
     </v-main>
 
     <v-footer app v-bind="localAttrs">
@@ -10,31 +10,17 @@
   </v-app>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed } from 'vue'
 import ContentBlock from './components/ContentBlock';
 import FooterBlock from './components/FooterBlock';
 
-export default {
-  name: 'App',
+const localAttrs = computed(() => {
+  const attrs = { absolute: false, fixed: false }
 
-  components: {
-    ContentBlock,
-    FooterBlock
-  },
+  attrs.absolute = true
+  attrs.fixed = false
 
-  computed: {
-    localAttrs () {
-      const attrs = {}
-
-      attrs.absolute = true
-      attrs.fixed = false
-
-      return attrs
-    },
-  },
-
-  data: () => ({
-    //
-  }),
-};
+  return attrs
+});
 </script>
