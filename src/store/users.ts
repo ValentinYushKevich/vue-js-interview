@@ -35,9 +35,7 @@ export const useUsersStore = defineStore('users', {
       return unFilteredUsers;
     },
     noUsersFind(): boolean {
-      return this.filteredUsers.filter((user: User) => {
-        return user.scores
-      }).length > 0
+      return this.filteredUsers.filter((user: User) => user.scores).length > 0
     }
   },
   actions: {

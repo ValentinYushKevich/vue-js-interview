@@ -15,6 +15,7 @@
 <script setup lang="ts">
 import FiltersBlock from './FiltersBlock.vue';
 import UsersList from './UsersList.vue';
+
 const countryItems = [
   "Russia",
   "Usa",

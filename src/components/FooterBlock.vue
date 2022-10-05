@@ -25,5 +25,4 @@ export default {
     border-color: #EF5350 !important;
     color: aliceblue;
   }
-
 </style>

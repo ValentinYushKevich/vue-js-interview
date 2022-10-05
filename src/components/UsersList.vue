@@ -22,8 +22,10 @@
 <script setup lang="ts">
 import { useUsersStore } from '@/store/users'
 import { onMounted } from 'vue'
+
 const userStore = useUsersStore()
 const { getAllUsers } = userStore
+
 onMounted((): void => {
   getAllUsers()
 })
